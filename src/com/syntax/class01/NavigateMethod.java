@@ -11,11 +11,11 @@ public class NavigateMethod {
         driver.get("http://www.facebook.com");
         driver.navigate().to("http://www.google.com");
         driver.navigate().back();
-        driver.navigate().forward();
+        driver.navigate().forward();// method chaining, more than one method in here
         Thread.sleep(2000); // pause the execution for 2 secs
         driver.navigate().refresh();
 
-        //driver.close(); will close the current tab
+        //driver.close(); will close the current tab only
         driver.quit(); // will quit the whole browser
 
     }

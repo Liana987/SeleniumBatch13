@@ -16,7 +16,7 @@ public class LaunchBrowser {
         //in the set Property or that driver does not exist inside this driver
         String url = driver.getCurrentUrl();//when using this we are getting the current url but
         //in a form of String value
-        System.out.println(url);
+        System.out.println(url);// as long as we have it in the RUN console as the url it is correctly done
         String title = driver.getTitle();//it is always on the tab, in this case DownloadsSelenium
         System.out.println(title);
         driver.quit();//to close the browser

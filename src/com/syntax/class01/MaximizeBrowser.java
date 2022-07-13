@@ -9,7 +9,7 @@ public class MaximizeBrowser {
         System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("https://www.amazon.com");
-        driver.manage().window().maximize();
+        driver.manage().window().maximize();//maximizing the window
         //driver.manage().window().fullscreen();
     }
 }

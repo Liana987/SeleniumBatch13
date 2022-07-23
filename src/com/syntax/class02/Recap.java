@@ -6,13 +6,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Recap {
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe ");
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.fb.com");
         driver.manage().window().maximize();
-        String title = driver.getTitle();
-        String expectedTitle = "Facebook - log in or sign up";
+        String title = driver.getTitle(); //actual title
+        String expectedTitle = "Facebook - log in or sign up"; //expected title
         if(title.equals(expectedTitle)) {
             System.out.println("Title is correct");
         } else {
@@ -20,5 +20,7 @@ public class Recap {
         }
 
         driver.quit();
+        //very important- whenever working with Selenium and trying to run the code
+        // every time will open new session on windows and mac especially.
     }
 }

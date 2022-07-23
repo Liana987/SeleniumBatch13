@@ -15,7 +15,7 @@ public class LocatingElements {
         driver.findElement(By.name("login")).click();
         Thread.sleep(3000);
         //driver.findElement(By.linkText("Forgot password?")).click();
-        driver.findElement(By.partialLinkText("Forgot")).click();
+        driver.findElement(By.partialLinkText("Forgot")).click();//anchor tag starts with an letter A
         driver.quit();
     }
 }

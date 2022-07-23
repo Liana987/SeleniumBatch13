@@ -9,11 +9,11 @@ HyperText Markup Language
 
 What is DOM?
 DOM Stands for Document Object Model. It is the browser's
-internal view of the webpage
+internal view of the webpage- webpage/right click/inspect
 Also called as Developer's tools or dev tools
 Document --> a simple html document which represents the page we are inspecting
 Object --> any line in HTML is considered to be an Object
-Model --> it is just a layout of the HTML
+Model --> it is just a layout of the HTML (how the page is structured,basically the blueprint)
 
 Locator
 is an address or a position of a webelement on the webpage
@@ -31,7 +31,8 @@ is used to locate or identify webelements on the webpage
 
 Why do we need so many locators?
 -- developers may not provide all the locators for all the elements
--- some locators may have duplicate values in different nodes
+-- some locators may have duplicate values in different nodes(node is a line of code in DOM),
+Selenium will interact with the first one he finds
 -- some locators may not be applicable for the elements we are looking for
 e.g linktext and partialLinktext are only used for links
 
